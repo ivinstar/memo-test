@@ -1,0 +1,35 @@
+ru:
+  activerecord:
+    models:
+
+  search:
+    field: "Поиск %s..."
+
+  title: 'Memo Test App'
+  new: 'Добавить'
+  edit: 'Редактировать'
+  delete: 'Удалить'
+  close: 'Закрыть'
+  save: 'Сохранить'
+  cancel: 'Отменить'
+  row_deleted: 'Текст успешно удален'
+  row_created: 'Текст успешно создан'
+  row_updated: 'Текст успешно изменен'
+
+  views:
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
+
+  datetime:
+    formats:
+      default: "%d-%m-%Y %H:%M"
+      js: 'DD-MM-YYYY hh:ii'
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      js: 'DD-MM-YYYY'
+

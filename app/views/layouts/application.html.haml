@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title AddressBook
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    .container-fluid
+      = render 'layouts/partials/header'
+
+      = render 'layouts/partials/flash'
+
+      .loading(ng-show="loading")
+        -#= 'loading...'
+
+      = yield
+
+    = render 'layouts/partials/footer'

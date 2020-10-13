@@ -1,0 +1,48 @@
+en:
+  activerecord:
+    models:
+      address: 'Addresses'
+    attributes:
+      address:
+        id: 'ID'
+        country: 'Country'
+        city: 'City'
+        street: 'Street'
+        street_name: 'Street name'
+        street_type: 'Type'
+        house: 'House'
+        zipcode: 'Zipcode'
+        date: 'Date'
+        updated_at: 'Date'
+
+  search:
+    field: 'Search %s...'
+
+  title: 'Address book'
+  new: 'Add'
+  edit: 'Edit'
+  delete: 'Delete'
+  close: 'Close'
+  save: 'Save'
+  cancel: 'Cancel'
+  row_deleted: 'Address has been deleted successfully'
+  row_created: 'Address has been created successfully'
+  row_updated: 'Address has been updated successfully'
+
+
+  views:
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
+
+  datetime:
+    formats:
+      default: "%d-%m-%Y %H:%M"
+      js: 'DD-MM-YYYY hh:ii'
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      js: 'DD-MM-YYYY'
