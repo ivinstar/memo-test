@@ -1,5 +1,4 @@
 %header
-  .navbar.navbar-inverse.navbar-fixed-top
-    .navbar-inner
-      .container-fluid
-        = link_to t(:title), root_path, class: 'brand'
+  %nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-dark
+    .container
+      = link_to t(:title), root_path, class: 'navbar-brand mb-0 h1'

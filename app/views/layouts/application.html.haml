@@ -6,12 +6,12 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
-    .container-fluid
-      = render 'layouts/partials/header'
+    = render 'layouts/partials/header'
+    .container
 
       = render 'layouts/partials/flash'
 
-      .loading(ng-show="loading")
+      .loading
         -#= 'loading...'
 
       = yield

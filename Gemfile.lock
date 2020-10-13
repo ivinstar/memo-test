@@ -220,7 +220,7 @@ DEPENDENCIES
   pg
   puma
   rabl
-  rails
+  rails (= 6.0.3.4)
   ransack
   simple_form
   twitter-bootstrap-rails!

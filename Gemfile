@@ -10,7 +10,7 @@ ruby '2.6.5'
 # Core gems
 gem 'pg'
 gem 'puma'
-gem 'rails'
+gem 'rails', '6.0.3.4'
 
 gem 'mini_portile'
 gem 'nokogiri'
