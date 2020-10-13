@@ -32,4 +32,8 @@ gem 'action_widget'
 gem 'simple_form'
 gem 'breadcrumbs_on_rails'
 
+group :assets do
+  gem 'uglifier'
+end
+
 
