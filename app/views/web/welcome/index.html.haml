@@ -1,11 +1,11 @@
+%h3= Request.model_name.human
 .row
   .col.left
-    -#%h5= "Отправить запрос на сервер"
     = simple_form_for @request, url: api_requests_path, remote: true do |f|
       .form-group
         = f.input :content, required: false, class: 'form-control'
       .form-group
-        = f.submit 'Сохранить', class: 'btn btn-primary'
+        = f.submit t('save'), class: 'btn btn-primary'
   .col.right
     %h5.counter
     .request-info

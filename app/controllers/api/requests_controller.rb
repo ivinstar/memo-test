@@ -4,6 +4,8 @@ class Api::RequestsController < Api::ApplicationController
     @request = Request.new(permit_params)
     if @request.valid?
       @request.save!
+    else
+      render json: {error: @request.errors.messages}, status: 403
     end
   end
 
