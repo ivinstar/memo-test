@@ -17,7 +17,9 @@ gem 'nokogiri'
 
 gem 'jquery-rails'
 gem 'coffee-rails'
+gem 'sass-rails'
 gem 'rabl'
+#gem 'responder'
 
 gem 'haml-rails'
 #gem "therubyracer"

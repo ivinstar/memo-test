@@ -2,10 +2,8 @@ class Api::RequestsController < Api::ApplicationController
 
   def create
     @request = Request.new(permit_params)
-    if @request.save!
-      render json: {status: 'ok'}
-    else
-      render json: {status: 'bad'}
+    if @request.valid?
+      @request.save!
     end
   end
 

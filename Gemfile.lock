@@ -90,6 +90,7 @@ GEM
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    ffi (1.13.1)
     font-awesome-rails (4.7.0.5)
       railties (>= 3.2, < 6.1)
     globalid (0.4.2)
@@ -180,6 +181,16 @@ GEM
       polyamorous (= 2.3.2)
     ruby_parser (3.15.0)
       sexp_processor (~> 4.9)
+    sass-rails (6.0.0)
+      sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     sexp_processor (4.15.1)
     simple_form (5.0.3)
       actionpack (>= 5.0)
@@ -224,6 +235,7 @@ DEPENDENCIES
   rabl
   rails (= 6.0.3.4)
   ransack
+  sass-rails
   simple_form
   twitter-bootstrap-rails!
   uglifier
