@@ -1,10 +1,11 @@
 .row
   .col.left
+    -#%h5= "Отправить запрос на сервер"
     = simple_form_for @request, url: api_requests_path, remote: true do |f|
       .form-group
-        = f.input :content, as: :text, label: false, required: false
+        = f.input :content, required: false, class: 'form-control'
       .form-group
         = f.submit 'Сохранить', class: 'btn btn-primary'
   .col.right
-    %h4= "0 запросов"
-    #info.request-info
+    %h5.counter
+    .request-info
