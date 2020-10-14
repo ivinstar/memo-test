@@ -5,7 +5,7 @@ class Api::RequestsController < Api::ApplicationController
     if @request.valid?
       @request.save!
     else
-      render json: {error: @request.errors.messages}, status: 403
+      render json: {error: @request.errors.full_messages}, status: 400
     end
   end
 

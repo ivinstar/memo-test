@@ -1,9 +1,9 @@
-%h3= Request.model_name.human
+-#%h3= Request.model_name.human
 .row
   .col.left
     = simple_form_for @request, url: api_requests_path, remote: true do |f|
       .form-group
-        = f.input :content, class: 'form-control'
+        = f.input :content, required: false, input_html: {class: 'form-control form-control-lg'}
       .form-group
         = f.submit t('save'), class: 'btn btn-primary'
   .col.right

@@ -1,4 +1,5 @@
 $(document).ready ->
+  setCookie('request_counter', 0)
   build_counter()
 
   form = $('form')
@@ -9,8 +10,9 @@ $(document).ready ->
     $('input[type=text]').val('')
     #console.log(data);
 
-  form.on 'ajax:error', (event, data) ->
-    $('.request-info').append data.error
+  form.on 'ajax:error', (data, errorThrown) ->
+    result = '<p>' + errorThrown.responseJSON.error + '</p>'
+    $('.request-info').append result
 
   form.on 'ajax:complete', (event, data) ->
     counter = increase_counter()

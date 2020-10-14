@@ -5,6 +5,12 @@ ru:
     attributes:
       request:
         content: Текст
+    errors:
+      models:
+        request:
+          attributes:
+            content:
+              blank: не может быть пустым
 
   search:
     field: "Поиск %s..."
