@@ -6,11 +6,11 @@ $(document).ready ->
     request = data.request
     result = '<p>' + 'ID[' + request.id + ']: ' + new Date(request.created_at).toString('yyyy-MM-dd HH:mm:ss') + '</p>'
     $('.request-info').append result
-    $('textarea').val ''
+    $('input[type=text]').val('')
     #console.log(data);
 
   form.on 'ajax:error', (event, data) ->
-    $('.request-info').append data
+    $('.request-info').append data.error
 
   form.on 'ajax:complete', (event, data) ->
     counter = increase_counter()

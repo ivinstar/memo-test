@@ -3,7 +3,7 @@
   .col.left
     = simple_form_for @request, url: api_requests_path, remote: true do |f|
       .form-group
-        = f.input :content, required: false, class: 'form-control'
+        = f.input :content, class: 'form-control'
       .form-group
         = f.submit t('save'), class: 'btn btn-primary'
   .col.right
